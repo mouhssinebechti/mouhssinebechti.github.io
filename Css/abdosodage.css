@@ -944,8 +944,11 @@ nav .navbar .nav-links{
 @media (max-width: 767px) {
     .profile-page .info-box .box {
         flex-direction: column;
+       text-align: center;
     } 
-    
+    .profile-page .download-btn {
+        text-align: center;
+    }
 }
 @media (max-width: 767px) {
     .profile-page .info-box .box label {
