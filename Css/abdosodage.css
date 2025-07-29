@@ -1018,7 +1018,8 @@ nav .navbar .nav-links{
     color: #555;
 }
 .profile-page .download-btn {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
     margin: 20px 0;
     padding: 10px 20px;
     background-color: #3e2c23;
