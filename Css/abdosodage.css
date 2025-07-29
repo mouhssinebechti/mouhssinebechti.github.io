@@ -862,6 +862,46 @@ nav .navbar .nav-links{
 }
 /* end woorks */
 /* Star profile page */
+.container .profile-page {
+    margin-bottom: 20px;
+    background-color: #eee;
+    padding: 10px;
+}
+.profile-page .ouverview {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.profile-page .avatar-box {
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+}
+.profile-page .avatar-box img {
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+.ouverview .info-box {
+    width: 100%;
+}
+.ouverview .info-box .box {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+.ouverview .info-box .box h4 {
+    color: var(--black-color);
+    font-size: 15px;
+    margin-bottom: 0px;
+    width: 100%;
+}
+.ouverview .info-box .box div {
+    font-size: 14px;
+}
+.ouverview .info-box .box div span{
+    color: var(--black-color);
+}
 .profile-page .avatar-box {
     width: 300px;
 }
