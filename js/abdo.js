@@ -1,16 +1,44 @@
-// // search-box open close js code
-// let navbar = document.querySelector(".navbar");
-// let searchBox = document.querySelector(".search-box .bx-search");
-// // let searchBoxCancel = document.querySelector(".search-box .bx-x");
+document.addEventListener("DOMContentLoaded", () => {
+    // كل Box عندو مصفوفة الصور الخاصة به
+    const boxes = document.querySelectorAll('.box');
 
-// searchBox.addEventListener("click", ()=>{
-//   navbar.classList.toggle("showInput");
-//   if(navbar.classList.contains("showInput")){
-//     searchBox.classList.replace("bx-search" ,"bx-x");
-//   }else {
-//     searchBox.classList.replace("bx-x" ,"bx-search");
-//   }
-// });
+    const imagesPerBox = [
+    [
+        './imageFer/fer75.png',
+        './imageFer/fer64.png',
+        './imageFer/fer68.png'
+    ],
+    [
+        './imageFer/fer50.png',
+        './imageFer/fer51.png',
+        './imageFer/fer52.png'
+    ],
+    [
+        './imageFer/fer60.png',
+        './imageFer/fer61.png',
+        './imageFer/fer62.png'
+    ],
+    [
+        './imageFer/fer70.png',
+        './imageFer/fer71.png',
+        './imageFer/fer72.png'
+    ]
+    ];
+    boxes.forEach((box, idx) => {
+    const img = box.querySelector('.box-image');
+    let index = 0;
+
+    setInterval(() => {
+        index = (index + 1) % imagesPerBox[idx].length;
+        img.style.opacity = 0;
+
+        setTimeout(() => {
+        img.src = imagesPerBox[idx][index];
+        img.style.opacity = 1;
+        }, 0); // نصف ثانية fade
+      }, 12000); // تبديل كل 4 ثواني
+    });
+});
 
 // sidebar open close js code
 let navLinks = document.querySelector(".nav-links");
@@ -272,4 +300,5 @@ showDropdown('sub-menu');
 setTimeout(() => {
     document.querySelector('.whatsapp-float').style.display = 'flex';
 }, 5000);
+
 // ------------------------------
