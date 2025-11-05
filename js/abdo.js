@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
         img.src = imagesPerBox[idx][index];
         img.style.opacity = 1;
         }, 0); // نصف ثانية fade
-      }, 12000); // تبديل كل 4 ثواني
+      }, 6000); // تبديل كل 6 ثواني
     });
 });
 
@@ -302,3 +302,4 @@ setTimeout(() => {
 }, 5000);
 
 // ------------------------------
+
