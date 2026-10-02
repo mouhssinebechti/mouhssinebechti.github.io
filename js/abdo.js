@@ -36,9 +36,9 @@ document.addEventListener("DOMContentLoaded", () => {
         img.src = imagesPerBox[idx][index];
         img.style.opacity = 1;
         }, 0); // نصف ثانية fade
-      }, 6000); // تبديل كل 6 ثواني
+      }, 60000); // تبديل كل 6 ثواني
     });
-});
+})
 
 // sidebar open close js code
 let navLinks = document.querySelector(".nav-links");
